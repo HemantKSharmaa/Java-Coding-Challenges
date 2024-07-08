@@ -1,0 +1,14 @@
+Question: Scan name of user and say Hello
+          Write a program to scan the name of the user and say hello to them.
+
+Code:- 
+import java.util.Scanner;
+public class hks{
+  public static void main(String args[]){
+    String userName;
+    Scanner input = new Scanner(System.in);
+    userName = input.nextLine();
+    
+    System.out.println("Hello "+userName);
+  }
+}
