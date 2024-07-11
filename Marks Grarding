@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      Scanner sc = new Scanner(System.in);
+      int mark1 = sc.nextInt();
+      int mark2 = sc.nextInt();
+      int mark3 = sc.nextInt();
+      int mark4 = sc.nextInt();
+      int mark5 = sc.nextInt();
+      
+      int average = (mark1+mark2+mark3+mark4+mark5)/5;
+      //System.out.print(average);
+      
+      if(average>=90){
+        System.out.println("A");
+      }
+      else if(average>=80 && average<90){
+        System.out.println("B");
+      }
+      else if(average>=70 && average<80){
+        System.out.println("C");
+      }
+      else if(average>=50 && average<70){
+        System.out.println("D");
+      }
+      else{
+        System.out.println("F");
+      }
+  }
+}
