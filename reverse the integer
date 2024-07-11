@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      int reverse=0;
+      int remainder=0;
+      
+      Scanner sc = new Scanner(System.in);
+      int number = sc.nextInt();
+      int original = number;
+      
+      
+      while(number!=0){
+        remainder = number%10;
+        reverse = reverse*10+remainder;
+        number = number/10;
+      }
+      
+      if(original==reverse){
+        System.out.println("YES");
+      }
+      else{
+        System.out.println("NO");
+      }
+    }
+      
+}
