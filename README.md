@@ -1,1 +1,1 @@
-Here I have pushed all of my codes those I have written or solved while learning Java programming language.
+Welcome to my collection of Java-based solutions to various coding problems! This repository showcases my journey of improving logic-building and mastering data structures and algorithms through regular practice.
