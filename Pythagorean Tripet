@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class isPythaTriplet {
+
+
+    public static void isTriplet(int angle1, int angle2, int angle3){
+
+        if(angle1 == 0 || angle2 == 0 || angle3 == 0){
+            System.out.println("Cannot form a triangle. Please enter angle above 0 degree");
+            //System.out.println("Also, ");
+            return;
+        }
+        else{
+            System.out.println(" ");
+        }
+
+        if( (angle1*angle1) + (angle2*angle2) == (angle3*angle3)){
+            System.out.println("Yes, They are pythagorean Triplets");
+        }
+        else{
+            System.out.println("No, they are the not pythogorean Triplets");
+        }
+    }
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Please enter the 1st angle: ");
+        int angle1 = sc.nextInt();
+
+        System.out.print("Please enter the 2nd angle: ");
+        int angle2 = sc.nextInt();
+
+        System.out.print("Please enter the 3rd angle: ");
+        int angle3 = sc.nextInt();
+
+        isTriplet(angle1, angle2, angle3);
+    }
+}
