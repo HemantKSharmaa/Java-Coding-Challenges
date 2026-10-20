@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class fiboSeries {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please typr the number: ");
+        int number = sc.nextInt();
+
+        int a = 0;
+        int b = 1;
+        System.out.print(a+", "+b);
+        int temp;
+        
+
+        for(int i=2; i<=number; i++){
+            temp = a+b;
+            System.out.print(", "+temp );
+            a = b;
+            b = temp;
+        }
+
+        
+    }
+}
